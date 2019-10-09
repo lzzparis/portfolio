@@ -1,0 +1,31 @@
+{
+  "projects": {
+    "default": "portfolio-lzz",
+    "master": "portfolio-lzz",
+    "prod": "portfolio-lzz"
+  },
+  "ci": {
+    "createConfig": {
+      "master": {
+        "env": "staging",
+        "firebase": {
+          "apiKey": "${STAGE_FIREBASE_API_KEY}",
+          "authDomain": "portfolio-lzz.firebaseapp.com",
+          "databaseURL": "https://portfolio-lzz.firebaseio.com",
+          "projectId": "portfolio-lzz",
+          "storageBucket": "portfolio-lzz.appspot.com"
+        }
+      },
+      "prod": {
+        "env": "production",
+        "firebase": {
+          "apiKey": "${PROD_FIREBASE_API_KEY}",
+          "authDomain": "portfolio-lzz.firebaseapp.com",
+          "databaseURL": "https://portfolio-lzz.firebaseio.com",
+          "projectId": "portfolio-lzz",
+          "storageBucket": "portfolio-lzz.appspot.com"
+        }
+      }
+    }
+  }
+}
