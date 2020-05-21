@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 import classes from './Header.scss';
 
 const Header = ({ name, imageUrl }) => (
-  <Link to="./Home">
+  <Link to="/">
     <img src={imageUrl} alt={name} />
     <h1>{name}</h1>
   </Link>
