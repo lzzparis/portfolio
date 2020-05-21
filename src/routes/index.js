@@ -3,6 +3,10 @@ import { Switch, Route } from 'react-router-dom';
 import CoreLayout from '../layouts/CoreLayout';
 import Home from './Home';
 import BackgroundRoute from './Background';
+import ContactRoute from './Contact';
+import ProjectsRoute from './Projects';
+import ServicesRoute from './Services';
+import TestomonialsRoute from './Testomonials';
 
 const createRoutes = () => (
   <CoreLayout>
@@ -11,6 +15,10 @@ const createRoutes = () => (
       {/* Build Route components from routeSettings */
         [
           BackgroundRoute,
+          ContactRoute,
+          ProjectsRoute,
+          ServicesRoute,
+          TestomonialsRoute,
           /* Add More Routes Here */
         ].map((settings, index) => (
           <Route key={`Route-${index}`} {...settings} />
